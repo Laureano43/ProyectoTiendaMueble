@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('../partials/head')%>
+</head>
+<body>
+    <%-include('../partials/nav')%>
+    <%-include('../partials/header')%>
+    
+    <main class="cont-padre">
+        <% data.forEach((prod)=>{%>
+        <!-- cards categorias -->
+            <div class="card">
+                <img class="img-card" src="<%=prod.imagen%>" alt="imagen=producto">
+                <p class="desc-card"><%=prod.descripcion%></p>
+                <a class="boton-ver"href="#">Ver Mas</a>
+            </div>
+        <%})%>
+    </main>
+    <%-include('../partials/footer')%>
+</body>
+</html>
